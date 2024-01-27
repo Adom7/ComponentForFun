@@ -6,8 +6,8 @@ import BandeauSection from '../../Sections/Bandeau/BandeauSection';
 class HomePage extends Component {
     render() {
         return (
-            <div>
-                <CardSection/>
+            <div className='home-master'>
+                {/* <CardSection/> */}
                 <BandeauSection />
             </div>
         );

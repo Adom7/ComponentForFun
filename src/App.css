@@ -1,4 +1,12 @@
 body{
   height: 300vh;
-  background-color: rgb(95, 91, 91);
+  background-color: rgb(37, 37, 37);
+  color: blanchedalmond;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

@@ -1,4 +1,49 @@
 .bandeau-master{
-    height: 30px;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg, transparent , white 20% , white 80% , transparent);
+    mask: linear-gradient( 90deg, transparent , white 40% , white 60% , transparent);
+
+
+}
+
+.bandeau-elements{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: fit-content;
+    animation: scrollBox 40s linear infinite;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+    border-radius: 20px;
+    margin: 0 10px;
+
+}
+
+
+.box img{
+    height: 80%;
+    filter: grayscale(100%);
+}
+
+@keyframes scrollBox {
+    0% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
