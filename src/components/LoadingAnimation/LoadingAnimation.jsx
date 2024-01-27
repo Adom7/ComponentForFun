@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoadingAnimation.css'
 
-import Logo from '../../components/Logos/Logo.jsx'
+import Logo from '../Logos/Logo.jsx'
 
 
 const LoadingAnimation = ({
