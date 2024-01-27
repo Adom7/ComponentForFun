@@ -6,7 +6,9 @@ class BandeauSection extends Component {
     render() {
         return (
             <div>
-                <Bandeau />
+                <Bandeau {...{reversed : true}} />
+                <Bandeau  />
+                <Bandeau {...{reversed : true}} />
             </div>
         );
     }

@@ -9,8 +9,7 @@
     -webkit-mask: linear-gradient(
         90deg, transparent , white 20% , white 80% , transparent);
     mask: linear-gradient( 90deg, transparent , white 40% , white 60% , transparent);
-
-
+    margin: 30px;
 }
 
 .bandeau-elements{
@@ -19,6 +18,14 @@
     height: 100%;
     width: fit-content;
     animation: scrollBox 40s linear infinite;
+}
+
+.bandeau-elements-reversed{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: fit-content;
+    animation: scrollBoxReversed 40s linear infinite;
 }
 
 .box{
@@ -44,6 +51,15 @@
         transform: translateX(-30%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(70%);
+    }
+}
+
+@keyframes scrollBoxReversed {
+    0% {
+        transform: translateX(70%);
+    }
+    100% {
+        transform: translateX(-30%);
     }
 }
