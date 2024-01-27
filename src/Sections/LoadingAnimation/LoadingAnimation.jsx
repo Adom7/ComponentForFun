@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoadingAnimation.css'
 
-import LogoLine from '../../components/Logos/LogoLine.jsx'
+import Logo from '../../components/Logos/Logo.jsx'
 
 
 const LoadingAnimation = ({
@@ -9,8 +9,11 @@ const LoadingAnimation = ({
   }) => {
     return (
         <div className="loading-screen">
+            <div className="loading-screen-background">
+
+            </div>
             <div className="logo">
-                <LogoLine />
+                <Logo />
             </div>
         </div>
     );

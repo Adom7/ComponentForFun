@@ -1,6 +1,5 @@
 #logo {
-    stroke-dasharray: 1251;
-    stroke-dashoffset: 795;
+    stroke-dasharray: 4092;
     animation: logo-appear 2s linear forwards;
     width: 100vh;
 }
@@ -8,12 +7,12 @@
 
 @keyframes logo-appear {
     from {
-        stroke-dashoffset: 1251;
+        stroke-dashoffset: 4092;
         visibility: visible;
     }
 
     to {
-        stroke-dashoffset: 795;
+        stroke-dashoffset: 0;
         visibility: visible;
     }
 

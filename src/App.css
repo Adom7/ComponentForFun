@@ -1,7 +1,13 @@
+:root{
+  --background-color :  rgb(37, 37, 37);
+  --font-color : blanchedalmond
+}
+
 body{
   height: 100%;
-  background-color: rgb(37, 37, 37);
-  color: blanchedalmond;
+  background-color: var(--background-color);
+  color:  var(--font-color);
+  overflow: hidden;
 }
 
 .App{
