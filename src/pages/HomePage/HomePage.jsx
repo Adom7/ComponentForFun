@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './HomePage.css'
-import CardSection from '../../Sections/CardSection/CardSection';
-import BandeauSection from '../../Sections/Bandeau/BandeauSection';
+import BandeauSection from '../../sections/Bandeau/BandeauSection';
+import LoadingAnimation from '../../sections/LoadingAnimation/LoadingAnimation';
 
 class HomePage extends Component {
     render() {
         return (
             <div className='home-master'>
-                {/* <CardSection/> */}
+                <LoadingAnimation />
                 <BandeauSection />
             </div>
         );
