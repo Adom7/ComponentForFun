@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 100px;
     flex-wrap: nowrap;
     overflow: hidden;
     -webkit-mask: linear-gradient(

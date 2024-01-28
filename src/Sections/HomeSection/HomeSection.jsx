@@ -12,7 +12,7 @@ class HomeSection extends Component {
   render() {
     return (
       <div className="home-section-master">
-        <div className="home-section noise">
+        <div className="home-section">
           <div class="home-content">
             <h1 className="home-title">{homeSectionConfig.name}</h1>
             <h1 className="home-title">{homeSectionConfig.pseudo}</h1>

@@ -5,7 +5,7 @@
     width: 100vw;
     overflow: hidden;
     z-index: 2;
-    animation: hide-text var(--hide-text-caroussel) ease-out var(--delay-fade) forwards ;
+    animation: hide-text var(--hide-text-caroussel) ease-out var(--delay-mouve) forwards ;
 }
 
 .text-anim-background{

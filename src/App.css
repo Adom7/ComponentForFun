@@ -1,12 +1,13 @@
 :root{
   --background-color :  rgb(37, 37, 37);
-  --font-color : blanchedalmond;
+  --font-color : white;
 }
 
 body{
   background-color: var(--background-color);
   color:  var(--font-color);
   scrollbar-color: transparent;
+
 }
 
 .App{
@@ -14,3 +15,33 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.noise-arc {
+  background-image: url(./media/Noises/noise-arc.png);
+  background-size: auto;
+  height: 100%;
+}
+
+.floating-rotate {
+  animation: float-rotate 10s ease-in-out infinite;
+}
+
+.floating-rotate:hover {
+  animation-play-state: paused; 
+  transform: scale(1.2);
+}
+
+@keyframes float-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg); 
+  }
+  50% {
+    transform: translateY(-30px) rotate(8deg); 
+  }
+}
+

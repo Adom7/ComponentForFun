@@ -33,11 +33,22 @@
     right: auto;
     top: auto;
     width: 35vw;
-    animation: logo-deplacement var(--logo-mouve) ease var(--delay-mouve) forwards;
+    animation: logo-deplacement-web var(--logo-mouve) ease var(--delay-mouve) forwards;
     z-index: 0;
 }
 
-@keyframes logo-deplacement {
+@keyframes logo-deplacement-web {
     0% {}
-    100%{background-color :transparent; z-index: 0; transform: translate3d(35vw , 20vh ,0);}
+    100%{background-color :transparent; z-index: 0; transform: translate3d(40vw , 20vh ,0);}
+}
+@keyframes logo-deplacement-mobile {
+    0% {}
+    100%{background-color :transparent; z-index: 0; transform: translate3d(30vw , 30vh ,0);}
+}
+
+@media (max-width : 600px) {
+    .logo{
+        width: 80vw;
+        animation: logo-deplacement-mobile var(--logo-mouve) ease var(--delay-mouve) forwards;
+    }
 }

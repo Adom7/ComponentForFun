@@ -9,7 +9,7 @@ const LoadingAnimation = ({
   }) => {
     return (
         <div className="loading-screen">
-            <div className="loading-screen-background">
+            <div className="loading-screen-background noise-arc">
 
             </div>
             <div className="logo">

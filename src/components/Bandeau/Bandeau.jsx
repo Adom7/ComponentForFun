@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Bandeau.css";
 
-let i = 3;
+let i = 4;
 const images = require.context("../../media/TechLogos", true);
 const imageList = images.keys().map((image) => images(image));
 

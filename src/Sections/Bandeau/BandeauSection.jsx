@@ -5,7 +5,7 @@ import Bandeau from '../../components/Bandeau/Bandeau';
 class BandeauSection extends Component {
     render() {
         return (
-            <div>
+            <div className='bandeau-section-master'>
                 <Bandeau {...{reversed : true}} />
                 <Bandeau  />
                 <Bandeau {...{reversed : true}} />
