@@ -32,7 +32,7 @@
     position: absolute;
     right: auto;
     top: auto;
-    width: 40vw;
+    width: 35vw;
     animation: logo-deplacement var(--logo-mouve) ease var(--delay-mouve) forwards;
     z-index: 0;
 }

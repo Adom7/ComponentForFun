@@ -11,8 +11,10 @@ class HomePage extends Component {
             <div className='home-master'>
                 <LoadingAnimation />
                 <TextAnimation />
-                <HomeSection />
-                {/* <BandeauSection /> */}
+                    <div className="appear-after-loading">
+                    <HomeSection />
+                    <BandeauSection />  
+                    </div>
             </div>
         );
     }

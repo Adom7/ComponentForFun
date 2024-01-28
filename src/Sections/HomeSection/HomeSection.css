@@ -37,17 +37,6 @@
         padding: 2rem 0 0 0;
     }
 
-    .big-logo svg{
-        width: 350px !important;
-        display: none;
-        
-    }
-    .big-logo {
-        right: -150px !important;
-        bottom: -200px !important;
-        display: none;
-    }
-
     .mobile{
         animation: zoom-into linear forwards;
         animation-timeline: scroll();

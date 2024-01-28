@@ -1,13 +1,10 @@
 .text-anim-master{
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index : 10;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    z-index: 30;
+    z-index: 2;
     animation: hide-text var(--hide-text-caroussel) ease-out var(--delay-fade) forwards ;
 }
 
@@ -21,8 +18,11 @@
 .text-anim-content{
     position: absolute;
     right: auto;
-    top: 10%;
+    top: 30%;
+    width: 100%;
+    flex-wrap: nowrap;
     display: flex;
+    justify-content: center;
     flex-direction: row ;
     height: fit-content;
     align-items: center;
@@ -31,8 +31,9 @@
 }
 
 .text-viewBox{
-    width: 400px;
-    height: 50px;
+    min-width: 200px;
+    max-width: 30%;
+    height: 40px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.315);
     overflow: hidden;
     margin-left: 1rem;
