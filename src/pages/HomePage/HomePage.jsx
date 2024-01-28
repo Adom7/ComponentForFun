@@ -8,7 +8,7 @@ class HomePage extends Component {
     render() {
         return (
             <div className='home-master'>
-                {/* <LoadingAnimation /> */}
+                <LoadingAnimation />
                 <TextAnimation />
                 <BandeauSection />
             </div>

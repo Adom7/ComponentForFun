@@ -4,6 +4,8 @@ import { Routes, Route , BrowserRouter } from 'react-router-dom';
 import NoPage from "./pages/NoPage/NoPage";
 import HomePage from "./pages/HomePage/HomePage";
 
+import "./components/animationTimeline.css"
+
 
 
 function App() {

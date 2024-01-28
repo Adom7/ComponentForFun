@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import "./TextAnimation.css";
 
 export default class TextAnimation extends Component {
+  
     componentDidMount() {
         const elements = document.querySelectorAll('.slide-up-div h1');
         let currentIndex = 1;
+        const totalTime = elements.length * 1000;
+        document.documentElement.style.setProperty('--text-caroussel', `${totalTime}ms`);
 
         this.interval = setInterval(() => {
             elements[currentIndex].scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +17,7 @@ export default class TextAnimation extends Component {
             } else {
                 currentIndex++;
             }
-        }, 2000);
+        }, 1000);
     }
 
   render() {

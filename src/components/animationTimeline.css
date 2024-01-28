@@ -1,0 +1,11 @@
+:root{
+    --text-caroussel : 1s;
+    --logo-appear : 2s;
+    --logo-mouve : 2s;
+    --fade-out-background : 2s;
+    --hide-text-caroussel : 1s;
+    --delay-fade : calc(var(--text-caroussel) + var(--logo-appear) + var(--logo-mouve));
+    --delay-mouve : calc(var(--text-caroussel) + var(--logo-appear));
+    --delay-appear : calc(var(--text-caroussel));
+    --delay-carrousel : calc(0);
+}

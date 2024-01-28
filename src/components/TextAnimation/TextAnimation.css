@@ -7,18 +7,21 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    z-index: 30;
+    animation: hide-text var(--hide-text-caroussel) ease-out var(--delay-fade) forwards ;
 }
 
 .text-anim-background{
     background-color: var(--background-color);
     width: 100%;
     height: 100%;
+    visibility: hidden;
 }
 
 .text-anim-content{
     position: absolute;
     right: auto;
-    top: auto;
+    top: 10%;
     display: flex;
     flex-direction: row ;
     height: fit-content;
@@ -30,7 +33,7 @@
 .text-viewBox{
     width: 400px;
     height: 50px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.315);
     overflow: hidden;
     margin-left: 1rem;
     scroll-behavior: smooth;
@@ -46,12 +49,7 @@
     margin-top: 0px;
 }
 
-/* .slide-up-div{
-    background-color: red;
-    animation: slideUp 5s ease-in forwards;
+@keyframes hide-text {
+    from {opacity: 1; display: flex;}
+    to {opacity: 0; display : none}
 }
-
-@keyframes slideUp {
-   0%{transform: translateY(0);}
-   100%{transform: translateY(-75%);}
-} */

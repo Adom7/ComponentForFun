@@ -1,7 +1,8 @@
 #logo {
     stroke-dasharray: 4092;
-    animation: logo-appear 2s linear forwards;
+    animation: logo-appear var(--logo-appear) linear var(--delay-appear) forwards;
     width: 100vh;
+    visibility: hidden;
 }
 
 

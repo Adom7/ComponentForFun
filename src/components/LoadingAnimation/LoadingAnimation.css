@@ -14,7 +14,7 @@
     background-color: var(--background-color);
     width: 100%;
     height: 100%;
-    animation: fadeOutLoadingScreen 2s linear 4s forwards           
+    animation: fadeOutLoadingScreen var(--fade-out-background) linear var(--delay-fade) forwards           
 }
 @keyframes fadeOutLoadingScreen {
     0%{}
@@ -26,7 +26,7 @@
     right: auto;
     top: auto;
     width: 40vw;
-    animation: logo-deplacement 2s ease 2s forwards;
+    animation: logo-deplacement var(--logo-mouve) ease var(--delay-mouve) forwards;
     z-index: 0;
 }
 
