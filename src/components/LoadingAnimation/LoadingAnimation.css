@@ -1,12 +1,19 @@
 .loading-screen{
     position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index : 10;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    animation: z-index-lower 1s linear var(--delay-fade) forwards;
+    z-index : 2;
+}
+
+@keyframes z-index-lower {
+    from{z-index: 2;}
+    to{z-index: 0;}
 }
 
 .loading-screen-background
@@ -32,5 +39,5 @@
 
 @keyframes logo-deplacement {
     0% {}
-    100%{background-color :transparent; z-index: 0; transform: translate3d(35vw , 40vh ,0);}
+    100%{background-color :transparent; z-index: 0; transform: translate3d(35vw , 20vh ,0);}
 }

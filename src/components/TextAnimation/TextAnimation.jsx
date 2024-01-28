@@ -3,6 +3,8 @@ import "./TextAnimation.css";
 
 const adjectives = [
   "Créatif",
+  "Developer",
+  "Humain (Promis🤖)",
   "Innovant",
   "Logique",
   "Méticuleux",
@@ -22,24 +24,26 @@ const adjectives = [
   "Visionnaire",
   "Flexible",
   "Polyvalent",
+  "Adlane OULD MOHAND"
 ];
 
 export default class TextAnimation extends Component {
   componentDidMount() {
     const elements = document.querySelectorAll(".slide-up-div h1");
-    let currentIndex = 1;
-    let delay = 500;
+    let currentIndex = 0;
+    let delay = 1000;
+    const retrait = 1.2
 
     const totalAnimationTime = () => {
       let totalTime = 0;
-      let fakeDelay = 500;
+      let fakeDelay = delay;
 
       adjectives.forEach((element, index) => {
         if (fakeDelay <= 0) {
           return totalTime;
         }
         totalTime += fakeDelay;
-        fakeDelay -= 50;
+        fakeDelay /= retrait;
       });
 
       return totalTime;
@@ -50,7 +54,7 @@ export default class TextAnimation extends Component {
       currentIndex++;
 
       if (currentIndex < elements.length) {
-        delay -= 50;
+        delay /= retrait;
         setTimeout(scrollAndDecreaseDelay, delay);
       }
     };
@@ -71,13 +75,9 @@ export default class TextAnimation extends Component {
           <div className="text-viewBox">
             <div className="text-to-show">
               <div className="slide-up-div">
-                <h1>Creative</h1>
-                <h1>Developer</h1>
-                <h1>Human (I Swear 🤖)</h1>
                 {adjectives.map((adjective, index) => (
                   <h1 key={index}>{adjective}</h1>
                 ))}
-                <h1>Adlane OULD MOHAND</h1>
               </div>
             </div>
           </div>
