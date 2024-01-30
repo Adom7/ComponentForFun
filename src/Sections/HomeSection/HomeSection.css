@@ -80,25 +80,6 @@
 
 }
 
-.big-logo{
-    width: 2000px;
-    height: 3471px;
-    position: absolute;
-    right: -70px;
-    bottom: -2542px;
-    z-index: 0;
-}
-
-.big-logo-line{
-    width: 2000px;
-    height: 3471px;
-    position: absolute;
-    right: -70px;
-    bottom: -2542px;
-    z-index: 0;
-}
-
-
 .web-and-mobile {
     display: flex;
     justify-content: center;

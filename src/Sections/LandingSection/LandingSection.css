@@ -19,3 +19,11 @@
         width: 50%;
     }
 }
+
+.rocket{
+    position: absolute;
+    margin: 10px;
+    left: 60%;
+    margin-bottom: 22%;
+    width: 20rem;
+}
